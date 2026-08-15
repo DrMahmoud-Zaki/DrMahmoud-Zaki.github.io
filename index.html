@@ -1,1 +1,675 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Mahmoud Zaki | Cement Production Specialist</title>
+
+    <meta name="description"
+          content="Dr. Mahmoud Zaki — Senior Production Shift Leader specializing in cement process optimization, alternative fuels, multi-fuel systems, energy efficiency and production operations.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(11, 15, 20, 0.92);
+            border-bottom: 1px solid #252b33;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-inner {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #d6a84f;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #c8cdd3;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d6a84f;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(214,168,79,0.12), transparent 35%),
+                radial-gradient(circle at 20% 80%, rgba(70,90,110,0.12), transparent 35%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            color: #d6a84f;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(44px, 7vw, 82px);
+            line-height: 0.95;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: #d6a84f;
+        }
+
+        .hero-title {
+            font-size: clamp(20px, 3vw, 30px);
+            color: #c8cdd3;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+            color: #9da5ae;
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #d6a84f;
+            color: #0b0f14;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 1px solid #3a424c;
+            color: #f4f4f4;
+        }
+
+        .btn-secondary:hover {
+            border-color: #d6a84f;
+            color: #d6a84f;
+        }
+
+        .hero-card {
+            border: 1px solid #303842;
+            border-radius: 14px;
+            padding: 35px;
+            background: linear-gradient(145deg, #121820, #0d1218);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+        }
+
+        .doctor {
+            font-size: 54px;
+            font-weight: 800;
+            color: #d6a84f;
+            margin-bottom: 8px;
+        }
+
+        .cement {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .arabic {
+            color: #8f98a2;
+            font-size: 18px;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            color: #d6a84f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 18px;
+        }
+
+        .section-intro {
+            color: #9da5ae;
+            max-width: 750px;
+            margin-bottom: 45px;
+        }
+
+        /* Skills */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill {
+            padding: 28px;
+            border: 1px solid #29313a;
+            border-radius: 10px;
+            background: #11171e;
+        }
+
+        .skill h3 {
+            color: #f4f4f4;
+            font-size: 18px;
+        }
+
+        /* Experience */
+
+        .experience {
+            border-left: 2px solid #d6a84f;
+            padding-left: 30px;
+        }
+
+        .experience-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .experience-item::before {
+            content: "";
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: #d6a84f;
+            left: -37px;
+            top: 8px;
+        }
+
+        .experience-item h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #d6a84f;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Project */
+
+        .project-card {
+            border: 1px solid #303842;
+            border-radius: 14px;
+            padding: 40px;
+            background:
+                linear-gradient(135deg, rgba(214,168,79,0.08), transparent 55%),
+                #11171e;
+        }
+
+        .project-card h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #a7afb8;
+            max-width: 750px;
+            margin-bottom: 25px;
+        }
+
+        /* Contact */
+
+        .contact-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact-item {
+            border: 1px solid #29313a;
+            padding: 25px;
+            border-radius: 10px;
+            background: #11171e;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #d6a84f;
+            margin-bottom: 8px;
+        }
+
+        .contact-item span {
+            color: #c8cdd3;
+            word-break: break-word;
+        }
+
+        /* Footer */
+
+        footer {
+            border-top: 1px solid #252b33;
+            padding: 30px 0;
+            text-align: center;
+            color: #737d87;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-inner">
+
+        <div class="logo">
+            Dr. <span>Mahmoud Zaki</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Cement Industry Professional
+            </div>
+
+            <h1>
+                Dr. <span>Mahmoud Zaki</span>
+            </h1>
+
+            <div class="hero-title">
+                Senior Production Shift Leader
+            </div>
+
+            <p class="hero-text">
+                Cement process optimization, production operations,
+                alternative fuels, multi-fuel systems and energy efficiency.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a class="btn btn-primary"
+                   href="#experience">
+                    View Experience
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://www.linkedin.com/in/mahmoud-zaki-cement"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="doctor">
+                DR.
+            </div>
+
+            <div class="cement">
+                CEMENT
+            </div>
+
+            <div class="arabic">
+                دكتور أسمنت
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-label">
+            About
+        </div>
+
+        <h2 class="section-title">
+            Professional Summary
+        </h2>
+
+        <p class="section-intro">
+            Senior Production Shift Leader with over 20 years of
+            expertise in cement process optimization and managing
+            complex multi-fuel systems while maintaining
+            zero-accident safety standards.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-label">
+            Expertise
+        </div>
+
+        <h2 class="section-title">
+            Key Skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <h3>Energy Efficiency</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Safety Excellence</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Alternative Fuels</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Production Optimization</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Multi-Fuel Systems</h3>
+            </div>
+
+            <div class="skill">
+                <h3>Shift Leadership</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-label">
+            Career
+        </div>
+
+        <h2 class="section-title">
+            Professional Experience
+        </h2>
+
+        <div class="experience">
+
+            <div class="experience-item">
+                <h3>Shift Leader</h3>
+                <div class="date">FEB 2021 — PRESENT</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Shift Leader</h3>
+                <div class="date">MAY 2020 — FEB 2021</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Shift Leader</h3>
+                <div class="date">APR 2019 — MAY 2020</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Shift Leader</h3>
+                <div class="date">JUL 2017 — APR 2019</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Line Operator</h3>
+                <div class="date">JUL 2012 — JUL 2017</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Kiln Operator</h3>
+                <div class="date">OCT 2009 — JUL 2012</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Mills Operator</h3>
+                <div class="date">DEC 2008 — OCT 2009</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>QC. Chemist</h3>
+                <div class="date">OCT 2006 — DEC 2008</div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Chemist</h3>
+                <div class="date">AUG 2005 — OCT 2006</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-label">
+            Project
+        </div>
+
+        <h2 class="section-title">
+            Trend El Mady
+        </h2>
+
+        <div class="project-card">
+
+            <h3>Trend El Mady AI System</h3>
+
+            <p>
+                A content project combining historical storytelling,
+                AI-assisted production and automation. The project is
+                being developed as a scalable AI and Automation system
+                using n8n, Google Drive, Google Sheets and publishing APIs.
+            </p>
+
+            <a class="btn btn-primary" href="#">
+                Project Coming Soon
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-label">
+            Contact
+        </div>
+
+        <h2 class="section-title">
+            Get in Touch
+        </h2>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <span>
+                    M.ZAKI.KHETABI@GMAIL.COM
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <strong>LinkedIn</strong>
+                <span>
+                    linkedin.com/in/mahmoud-zaki-cement
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Dr. Mahmoud Zaki — Professional Portfolio
+
+</footer>
+
+</body>
+</html>
