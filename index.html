@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,335 +7,67 @@ HTML
     <meta name="description" content="Dr. Mahmoud Zaki — Senior Production Shift Leader specializing in cement process optimization, alternative fuels, multi-fuel systems, energy efficiency and production operations.">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0b0f14;
-            color: #f4f4f4;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: min(1120px, 90%);
-            margin: auto;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #0b0f14; color: #f4f4f4; line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+        .container { width: min(1120px, 90%); margin: auto; }
 
         /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(11, 15, 20, 0.92);
-            border-bottom: 1px solid #252b33;
-            backdrop-filter: blur(10px);
-        }
-
-        .nav-inner {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .nav-logo {
-            max-height: 45px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #c8cdd3;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #d6a84f;
-        }
+        nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(11, 15, 20, 0.95); border-bottom: 1px solid #252b33; backdrop-filter: blur(10px); }
+        .nav-inner { min-height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+        .nav-logo { max-height: 50px; width: auto; object-fit: contain; }
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a { color: #c8cdd3; font-size: 14px; transition: 0.3s; }
+        .nav-links a:hover { color: #d6a84f; }
 
         /* Hero */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 100px;
-            background: 
-                radial-gradient(circle at 80% 20%, rgba(214,168,79,0.12), transparent 35%),
-                radial-gradient(circle at 20% 80%, rgba(70,90,110,0.12), transparent 35%);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.4fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            color: #d6a84f;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 18px;
-        }
-
-        h1 {
-            font-size: clamp(44px, 7vw, 82px);
-            line-height: 0.95;
-            margin-bottom: 24px;
-        }
-
-        .hero h1 span {
-            color: #d6a84f;
-        }
-
-        .hero-title {
-            font-size: clamp(20px, 3vw, 30px);
-            color: #c8cdd3;
-            margin-bottom: 20px;
-        }
-
-        .hero-text {
-            max-width: 700px;
-            color: #9da5ae;
-            font-size: 17px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 32px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 13px 22px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 14px;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: #d6a84f;
-            color: #0b0f14;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background: #e2b763;
-        }
-
-        .btn-secondary {
-            border: 1px solid #3a424c;
-            color: #f4f4f4;
-        }
-
-        .btn-secondary:hover {
-            border-color: #d6a84f;
-            color: #d6a84f;
-        }
-
-        .hero-image {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 14px;
-            display: block;
-            margin: 0 auto;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
-            background: linear-gradient(145deg, #121820, #0d1218);
-        }
+        .hero { padding-top: 100px; padding-bottom: 40px; min-height: auto; display: flex; align-items: center; background: radial-gradient(circle at 80% 20%, rgba(214,168,79,0.12), transparent 35%), radial-gradient(circle at 20% 80%, rgba(70,90,110,0.12), transparent 35%); }
+        .hero-grid { display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 60px; align-items: center; }
+        .eyebrow { color: #d6a84f; font-size: 14px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
+        h1 { font-size: clamp(35px, 5vw, 60px); line-height: 1.1; margin-bottom: 20px; white-space: nowrap; }
+        .hero h1 span { color: #d6a84f; }
+        .hero-title { font-size: clamp(18px, 3vw, 25px); color: #c8cdd3; margin-bottom: 15px; }
+        .hero-text { max-width: 700px; color: #9da5ae; font-size: 16px; margin-bottom: 20px; }
+        
+        .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border-radius: 6px; font-weight: 700; font-size: 13px; transition: 0.3s; cursor: pointer; }
+        .btn-primary { background: #d6a84f; color: #0b0f14; }
+        .btn-primary:hover { background: #e2b763; transform: translateY(-2px); }
+        .btn-secondary { border: 1px solid #3a424c; color: #f4f4f4; }
+        .btn-secondary:hover { border-color: #d6a84f; color: #d6a84f; }
+        .hero-image { width: 100%; max-width: 400px; border-radius: 14px; box-shadow: 0 25px 60px rgba(0,0,0,0.35); }
 
         /* Sections */
-        section {
-            padding: 10px 0;
-        }
+        section { padding: 60px 0; }
+        .section-label { color: #d6a84f; text-transform: uppercase; letter-spacing: 3px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
+        .section-title { font-size: clamp(25px, 4vw, 40px); margin-bottom: 20px; }
+        .section-intro { color: #9da5ae; max-width: 750px; margin-bottom: 40px; }
 
-        .section-label {
-            color: #d6a84f;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .section-title {
-            font-size: clamp(30px, 5vw, 48px);
-            margin-bottom: 18px;
-        }
-
-        .section-intro {
-            color: #9da5ae;
-            max-width: 750px;
-            margin-bottom: 45px;
-        }
-
-        /* Skills */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .skill {
-            padding: 28px;
-            border: 1px solid #29313a;
-            border-radius: 10px;
-            background: #11171e;
-        }
-
-        .skill h3 {
-            color: #f4f4f4;
-            font-size: 18px;
-        }
-
-        /* Experience */
-        .experience {
-            border-left: 2px solid #d6a84f;
-            padding-left: 30px;
-        }
-
-        .experience-item {
-            position: relative;
-            margin-bottom: 40px;
-        }
-
-        .experience-item::before {
-            content: "";
-            position: absolute;
-            width: 11px;
-            height: 11px;
-            border-radius: 50%;
-            background: #d6a84f;
-            left: -37px;
-            top: 8px;
-        }
-
-        .experience-item h3 {
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-
-        .company-name {
-            color: #a7afb8;
-            font-size: 16px;
-            margin-bottom: 8px;
-        }
-
-        .date {
-            color: #d6a84f;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+        /* Experience & Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .skill { padding: 20px; border: 1px solid #29313a; border-radius: 8px; background: #11171e; }
+        .experience { border-left: 2px solid #d6a84f; padding-left: 25px; }
+        .experience-item { position: relative; margin-bottom: 30px; }
+        .experience-item::before { content: ""; position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #d6a84f; left: -31px; top: 5px; }
 
         /* Contact */
-        .contact-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+        .contact-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .contact-item { border: 1px solid #29313a; padding: 20px; border-radius: 10px; background: #11171e; }
 
-        .contact-item {
-            border: 1px solid #29313a;
-            padding: 25px;
-            border-radius: 10px;
-            background: #11171e;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .contact-item strong {
-            display: block;
-            color: #d6a84f;
-            margin-bottom: 12px;
-            font-size: 18px;
-        }
-
-        .contact-item span {
-            color: #c8cdd3;
-            word-break: break-word;
-            font-size: 16px;
-        }
-
-        /* Footer */
-        footer {
-            border-top: 1px solid #252b33;
-            padding: 30px 0;
-            text-align: center;
-            color: #737d87;
-            font-size: 13px;
-        }
-
-        /* Mobile */
         @media (max-width: 800px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding-top: 120px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-box {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 75px 0;
-            }
+            .nav-links { display: none; }
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            h1 { white-space: normal; }
         }
     </style>
 </head>
-
 <body>
 
 <nav>
     <div class="container nav-inner">
         <div class="logo">
-            <a href="#">
-                <img src="logo.jpeg" alt="Dr. Cement Logo" class="nav-logo">
-            </a>
+            <a href="#"><img src="logo.jpeg" alt="Logo" class="nav-logo"></a>
         </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -347,181 +78,56 @@ HTML
     </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
     <div class="container hero-grid">
         <div>
-            <div class="eyebrow">
-                Cement Industry Professional
-            </div>
-            <h1>
-                Dr. <span>Mahmoud Zaki</span>
-            </h1>
-            <div class="hero-title">
-                Senior Production Shift Leader
-            </div>
-            <p class="hero-text">
-                Cement process optimization, production operations, alternative fuels, multi-fuel systems and energy efficiency.
-            </p>
+            <div class="eyebrow">Cement Industry Professional</div>
+            <h1>Dr. <span>Mahmoud Zaki</span></h1>
+            <div class="hero-title">Senior Production Shift Leader</div>
+            <p class="hero-text">Cement process optimization, production operations, alternative fuels, multi-fuel systems and energy efficiency.</p>
             <div class="hero-buttons">
-                <a class="btn btn-primary" href="#experience">
-                    View Experience
-                </a>
-                <a class="btn btn-secondary" href="Mahmoud_Zaki_CV.pdf" download="Mahmoud_Zaki_CV.pdf">
-                    Download CV (PDF)
-                </a>
-<a class="btn btn-primary" href="https://www.linkedin.com/in/mahmoud-zaki-cement" target="_blank" rel="noopener noreferrer">
-                    Connect on LinkedIn
-                </a>
-<a href="tel:01002580455" class="btn btn-primary">Call: 01002580455</a>
+                <a class="btn btn-primary" href="#experience">View Experience</a>
+                <a class="btn btn-secondary" href="Mahmoud_Zaki_CV.pdf" download>Download CV</a>
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/mahmoud-zaki-cement" target="_blank">LinkedIn</a>
             </div>
-
         </div>
-
         <div>
             <img src="me2.png" alt="Dr. Mahmoud Zaki" class="hero-image">
         </div>
-
     </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
     <div class="container">
-        <div class="section-label">
-            About
-        </div>
-        <h2 class="section-title">
-            Professional Summary
-        </h2>
-        <p class="section-intro">
-            Results-driven and highly technical Senior Production Shift Leader with over 20 years of robust experience in cement manufacturing, process optimization, and large-scale plant operations. Proven expertise in managing complex FLS and KHD cement production lines, maximizing equipment reliability, and spearheading complex commissioning projects. Exceptionally skilled in multi-fuel systems, with a demonstrated ability to optimize combustion matrixes and seamlessly transition between conventional and alternative fuels (AFR, Petcoke, Mazut, and Hydrogen) to achieve massive energy savings and emission reductions. A decisive leader with a strong scientific background, expert in industrial diagnostics, root-cause troubleshooting, and fostering a strict zero-accident HSE culture.
-        </p>
+        <div class="section-label">About</div>
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="section-intro">Results-driven and highly technical Senior Production Shift Leader with over 20 years of robust experience in cement manufacturing, process optimization, and large-scale plant operations.</p>
     </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <div class="container">
-        <div class="section-label">
-            Expertise
-        </div>
-        <h2 class="section-title">
-            Key Skills
-        </h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <h3>Energy Efficiency</h3>
-            </div>
-            <div class="skill">
-                <h3>Safety Excellence</h3>
-            </div>
-            <div class="skill">
-                <h3>Alternative Fuels</h3>
-            </div>
-            <div class="skill">
-                <h3>Production Optimization</h3>
-            </div>
-            <div class="skill">
-                <h3>Multi-Fuel Systems</h3>
-            </div>
-            <div class="skill">
-                <h3>Shift Leadership</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
 <section id="experience">
     <div class="container">
-        <div class="section-label">
-            Career
-        </div>
-        <h2 class="section-title">
-            Professional Experience
-        </h2>
+        <div class="section-label">Career</div>
+        <h2 class="section-title">Professional Experience</h2>
         <div class="experience">
-            <div class="experience-item">
-                <h3>Senior Production Shift Leader</h3>
-                <div class="company-name">RHI - ACC - Ramliya Project</div>
-                <div class="date">FEB 2021 — PRESENT</div>
-            </div>
-            <div class="experience-item">
-                <h3>Production Shift Leader</h3>
-                <div class="company-name">ASEC - Al Minya Project</div>
-                <div class="date">MAY 2020 — FEB 2021</div>
-            </div>
-            <div class="experience-item">
-                <h3>Production Shift Leader</h3>
-                <div class="company-name">ASEC - BMIC Project</div>
-                <div class="date">APR 2019 — MAY 2020</div>
-            </div>
-            <div class="experience-item">
-                <h3>Production Shift Leader</h3>
-                <div class="company-name">FLSmidth - ACC - Ramliya Project</div>
-                <div class="date">JUL 2017 — APR 2019</div>
-            </div>
-            <div class="experience-item">
-                <h3>Line Operator (Kiln & Raw Mill)</h3>
-                <div class="company-name">FLSmidth - ACC - Ramliya Project</div>
-                <div class="date">JUL 2012 — JUL 2017</div>
-            </div>
-            <div class="experience-item">
-                <h3>Kiln Operator</h3>
-                <div class="company-name">ASEC - Sinai Gray Cement Project</div>
-                <div class="date">OCT 2009 — JUL 2012</div>
-            </div>
-            <div class="experience-item">
-                <h3>Mills Operator</h3>
-                <div class="company-name">ASEC - Sinai Gray Cement Project</div>
-                <div class="date">DEC 2008 — OCT 2009</div>
-            </div>
-            <div class="experience-item">
-                <h3>Q.C. Chemist</h3>
-                <div class="company-name">ASEC - Sinai Gray Cement Project</div>
-                <div class="date">OCT 2006 — DEC 2008</div>
-            </div>
-            <div class="experience-item">
-                <h3>Chemist</h3>
-                <div class="company-name">SGS Egypt - Cement & Silica Sand Division</div>
-                <div class="date">AUG 2005 — OCT 2006</div>
-            </div>
+            <div class="experience-item"><h3>Senior Production Shift Leader</h3><div class="company-name">RHI - ACC - Ramliya Project</div></div>
+            <div class="experience-item"><h3>Production Shift Leader</h3><div class="company-name">ASEC - Al Minya Project</div></div>
         </div>
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <div class="container">
-        <div class="section-label">
-            Contact
-        </div>
-        <h2 class="section-title">
-            Get in Touch
-        </h2>
+        <h2 class="section-title">Get in Touch</h2>
         <div class="contact-box">
-            <div class="contact-item">
-                <strong>Email</strong>
-                <span>M.ZAKI.KHETABI@GMAIL.COM</span>
-            </div>
-<div class="contact-item">
-                <strong>Phone</strong>
-                <a href="tel:01002580455" class="btn btn-primary">Call: 01002580455</a>
-            </div>
-            <div class="contact-item">
-                <strong>LinkedIn</strong>
-                <a class="btn btn-primary" href="https://www.linkedin.com/in/mahmoud-zaki-cement" target="_blank" rel="noopener noreferrer">
-                    Connect on LinkedIn
-                </a>
-            </div>
+            <div class="contact-item"><strong>Email</strong><span>M.ZAKI.KHETABI@GMAIL.COM</span></div>
+            <div class="contact-item"><strong>Phone</strong><a href="tel:01002580455" class="btn btn-primary">01002580455</a></div>
+            <div class="contact-item"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/mahmoud-zaki-cement" target="_blank" class="btn btn-primary">Visit Profile</a></div>
         </div>
     </div>
 </section>
 
-<footer>
-    &copy; Dr. Mahmoud Zaki — Professional Portfolio
-</footer>
+<footer>&copy; Dr. Mahmoud Zaki — Professional Portfolio</footer>
 
 </body>
 </html>
